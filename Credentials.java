@@ -8,10 +8,9 @@ public class Credentials {
 
     static {
         properties = new Properties();
-        try (InputStream inputStream = new FileInputStream("C:/Users/Edson/eclipse-workspace/CRUD/src/resources/config.properties");) {
+        try (InputStream inputStream = new FileInputStream("config.properties");) {
             properties.load(inputStream);
         } catch (IOException e) {
-            // Handle exceptions, e.g., log or throw an error
             e.printStackTrace();
         }
     }
